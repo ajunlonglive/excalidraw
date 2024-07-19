@@ -4129,6 +4129,7 @@ class App extends React.Component<AppProps, AppState> {
         }
 
         if (
+          this.state.activeTool.type === "text" ||
           selectedElements.find(
             (element) =>
               isTextElement(element) ||
